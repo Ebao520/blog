@@ -20,6 +20,10 @@
     var CONFIG = {"hostname":"eplug.vip","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
+<link rel="stylesheet" href="/css/footer.css">
+<script src="/js/typed.js"></script>
+<script src="/js/jquery.min.js"></script>
+
   <meta name="description" content="E宝-Excel插件 简单、易用、免费、唾手可得的可得的Excel工具箱">
 <meta property="og:type" content="website">
 <meta property="og:title" content="E宝-官方网站">
@@ -281,10 +285,19 @@
   &copy; 
   <span itemprop="copyrightYear">2024</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <!-- Replace the icon with a heartbeat icon -->
+    <i class="fa-fw fas fa-heartbeat fa-beat" style="color: #f92672;"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">E宝办公</span>
 </div>
+
+<!-- Add the framework-info div for site running time -->
+<div class="framework-info">
+  本站已运行<span id="span_dt_dt" style="color: #fff;"></span>
+</div>
+
+<script src="/js/custom.js"></script>
+<script src="/js/fish.js"></script>
 
         
 
@@ -317,19 +330,6 @@
 
 
 
-<script src="/js/typed.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var options = {
-      strings: ["一款佛系的Excel插件", "轻松管理您的数据", "提升工作效率"],
-      typeSpeed: 50,  // Typing speed in milliseconds
-      backSpeed: 25,  // Backspacing speed in milliseconds
-      loop: true      // Loop the typing animation
-    };
-
-    var typed = new Typed("#typed", options);
-  });
-</script>
   
 
 
