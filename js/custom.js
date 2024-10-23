@@ -34,7 +34,7 @@ function show_date_time() {
 // source/js/custom.js
 document.addEventListener('DOMContentLoaded', function () {
     var options = {
-        strings: ["一款佛系的Excel插件", "轻松管理您的数据", "提升工作效率"],
+        strings: ["一款佛系的Excel插件", "轻松处理您的数据", "提升工作效率", "简单、易用、高效的Excel插件", "在数据的海洋中航行", "E宝插件如灯塔般闪亮", "让数字在表格中舞蹈飞扬", "从枯燥的行列中解放", "让繁琐的工作变得轻松", "在每一个单元格中创造奇迹。"],
         typeSpeed: 80,  // Typing speed in milliseconds
         backSpeed: 40,  // Backspacing speed in milliseconds
         loop: true      // Loop the typing animation
