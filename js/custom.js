@@ -42,3 +42,37 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var typed = new Typed("#typed", options);
 });
+window.tctipConfig = {
+    //最上面的文字
+    headText: "喜欢就打赏一包辣条吧 ^_^",
+    //侧边栏文本
+    siderText: "公告 & 打赏",
+    //侧边栏文本高度调整
+    siderTextTop: "-72px",
+    //侧边栏背景颜色
+    siderBgcolor: "#323d45",
+    //整个侧边栏的高度设置
+    siderTop: "118px",
+    //底部文字
+    buttomText: "了解更多",
+    //底部文字链接
+    buttomLink: "http://www.eplug.vip/",
+    //显示列表
+    list: {
+        notice: {
+            name: "公告栏", className: "myR-on",
+            icon: "/img/icon/tip.png",
+            text: '欢迎来到E宝办公。最新版：2.7。 2024-10-20'
+        },
+        alipay: {
+            name: "支付宝", desc: "用支付宝给“E宝”打赏",
+            icon: "/img/icon/alipay.png",
+            qrimg: "/img/qr/alipayqr.png"
+        },
+        weixin: {
+            name: "微信", desc: "用微信给“E宝”打赏",
+            icon: "/img/icon/weixin.png",
+            qrimg: "/img/qr/weixin.png"
+        }
+    }
+};
