@@ -84,7 +84,9 @@ var RENDERER = {
 		this.$window.on('resize', this.watchWindowSize);
 		this.$container.on('mouseenter', this.startEpicenter);
 		this.$container.on('mousemove', this.moveEpicenter);
-		this.$container.on('click', this.reverseVertical);
+		// 取消鼠标点击效果，确保容器不被移位
+		//this.$container.on('click', this.reverseVertical);
+
 	},
 	getAxis: function (event) {
 		var offset = this.$container.offset();
@@ -142,7 +144,7 @@ var RENDERER = {
 		requestAnimationFrame(this.render);
 		this.controlStatus();
 		this.context.clearRect(0, 0, this.width, this.height);
-		this.context.fillStyle = 'hsl(0, 0%, 95%)';
+		this.context.fillStyle = 'hsl(0, 0%, 97%)';
 
 		for (var i = 0, count = this.fishes.length; i < count; i++) {
 			this.fishes[i].render(this.context);
