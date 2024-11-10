@@ -262,3 +262,28 @@
     font-weight: bold;
     cursor: pointer;
 }
+
+/* styles.css */
+.text-with-image {
+    position: relative;
+    display: inline-block;
+}
+
+.hover-image {
+    display: none;
+    position: absolute;
+    top: 50%;
+    /* Center the image vertically relative to the text */
+    right: -230px;
+    /* Adjust this value based on your image width */
+    transform: translateY(-50%);
+    width: 140px;
+    /* Adjust the size as needed */
+    border: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.text-with-image:hover .hover-image {
+    display: block;
+}
